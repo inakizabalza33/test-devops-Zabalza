@@ -19,7 +19,7 @@ Para probar que los servicios se encuentran corriendo correctamente, deberán se
 - Ubicado dentro de la carpeta del repositorio, moverse al directorio Prueba2 y correr el docker compose:
 
 ```bash
-    cd Prueba3 # Moverse al directorio Prueba3
+    cd Prueba2 # Moverse al directorio Prueba2
     docker-compose up -d # Construir y correr los contenedores mediante docker compose
 ```
 
