@@ -22,4 +22,4 @@ Los pasos para verificar el correcto funcionamiento del pipeline son los siguien
     git push origin main # Realizar un push. En este caso sobre main.
 ```
 
-    Luego, en Github, podrá verse la action ejecutándose correctamente dentro del menu "Actions" del repositorio. 
+Luego, en Github, podrá verse la action ejecutándose correctamente dentro del menu "Actions" del repositorio. 
