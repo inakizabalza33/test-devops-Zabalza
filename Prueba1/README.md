@@ -5,8 +5,9 @@ En la imagen se presenta el diagrama de red propuesto. Los usuarios finales se c
 
 Las instancias pertenecen en su totalidad a un grupo de autoscaling. Estos grupos permiten configurar escalado automático de instancias ante diferentes condiciones para garantizar el correcto funcionamiento de la aplicación al menor costo, lo cual garantiza dos cosas:
 
-Alta disponibilidad: debido a que si una de las instancias sufre una caída o entra en un estado de error, se podrían habilitar otras automáticamente. Además, en este caso se decidió tener un mínimo de dos instancias, aumentando la HA, así como tambien optimizando el uso de soluciones distribuidas.
-Soportar cargas variables: ya que en los momentos de más tráfico, podría aumentarse el número de instancias, mientras que en los momentos de menos tráfico podrían reducirse. 
+- Alta disponibilidad: debido a que si una de las instancias sufre una caída o entra en un estado de error, se podrían habilitar otras automáticamente. Además, en este caso se decidió tener un mínimo de dos instancias, aumentando la HA, así como tambien optimizando el uso de soluciones distribuidas.
+
+- Soportar cargas variables: ya que en los momentos de más tráfico, podría aumentarse el número de instancias, mientras que en los momentos de menos tráfico podrían reducirse. 
 
 Por otro lado se optó por usar dos volúmenes de almacenamiento para las instancias: uno para la raíz, y otro para los datos. De esta manera se realizarán snapshots para almacenar la información relevante de la instancia en caso de ser necesario.
 También se utilizará otro bucket de S3 para el almacenamiento de logs de las instancias.
