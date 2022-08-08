@@ -2,7 +2,7 @@
 
 Para esta prueba, se generaron dos dockerfiles:
 
-- Uno para el backend, que usa una imagen de python, instala algunas librerías faltantes para el correcto funcionamiento, y luego corre un entrypoint, el cual realiza las migraciones e inicia el servidor. Las librerías que fueron isntaladas adicionalmente luego de verificar que faltaban fueron: gcc, python3-dev, graphviz, libgraphviz-dev y pkg-config.
+- Uno para el backend, que usa una imagen de python, instala algunas librerías faltantes para el correcto funcionamiento, y luego corre un entrypoint, el cual realiza las migraciones e inicia el servidor. Las librerías que fueron instaladas adicionalmente luego de verificar que faltaban fueron: gcc, python3-dev, graphviz, libgraphviz-dev y pkg-config.
 
 - Otro para el frontend, que utiliza una imagen de node, instala la librería "chalk", puesto que al intentar correr el contenedor ocurría un error diciendo que faltaba instalar dicha dependencia. Luego inicia el servidor corriendo "npm start".
 
@@ -32,7 +32,7 @@ Luego, será posible conectarse a los puertos correspondientes y visualizar tant
     localhost:3000 # Para visualizar el frontend
 ```
 
-- En el caso de que se haya corrido el script en un entorno cloud o en otro servidor, ir al navegador y buscar (reenplanzando <ip_del_server> por la ip de la instancia en la nube o servidor utilizado):
+- En el caso de que se haya corrido el script en un entorno cloud o en otro servidor, ir al navegador y buscar (reemplanzando <ip_del_server> por la ip de la instancia en la nube o servidor utilizado):
 
 ```bash
     <ip_del_server>:8000 # Para visualizar el backend
