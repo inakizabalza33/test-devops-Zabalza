@@ -6,7 +6,7 @@ Para esta prueba, se generaron dos dockerfiles:
 
 - Otro para el frontend, que utiliza una imagen de node, instala la librería "chalk", puesto que al intentar correr el contenedor ocurría un error diciendo que faltaba instalar dicha dependencia. Luego inicia el servidor corriendo "npm start".
 
-Finalmente, se confeccionó un docker-compose.yml, el cual realiza el build y el run de los contenedores anteriormente descritos, abriendo el puerto 8000 para el backend y el 3000 para el frontend. Este script también corre una imagen de postgres, implementando una base de datos relacional que se comunicará con el backend a través del puerto 5432, y persistirá los datos dentro del directorio database-data.
+Finalmente, se confeccionó un docker-compose.yml, el cual realiza el build y el run de los contenedores anteriormente descritos, abriendo el puerto 8000 para el backend y el 3000 para el frontend. Este script también corre una imagen de postgres, implementando una base de datos relacional que se comunicará con el backend a través del puerto 5432, y persistirá los datos dentro del directorio database-data. Se decidió utilizar docker compose debido a la facilidad que aporta para construir y correr imágenes, considerando también que se trata de un ejemplo pequeño para implementar en Kubernetes.
 
 Para probar que los servicios se encuentran corriendo correctamente, deberán seguirse los siguientes pasos:
 
