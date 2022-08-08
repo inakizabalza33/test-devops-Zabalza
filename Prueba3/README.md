@@ -6,15 +6,15 @@ Para esto se escribió el archivo buildAndPush.yaml localizado en el path .githu
 
 Los pasos para verificar el correcto funcionamiento del pipeline son los siguientes:
 
-    - Clonar el repositorio:
+- Clonar el repositorio:
 
 ```bash
     git clone https://github.com/inakizabalza33/test-devops-Zabalza.git # Clonar el repositorio
 ```
 
-    - Realizar una modificación al archivo index.html contenido dentro de la carpeta Prueba3 y guardar los cambios.
+- Realizar una modificación al archivo index.html contenido dentro de la carpeta Prueba3 y guardar los cambios.
 
-    - Agregar los cambios, hacer un commit y un push (sobre cualquier rama):
+- Agregar los cambios, hacer un commit y un push (sobre cualquier rama):
 
 ```bash
     git add . # Agregar los cambios
